@@ -29,7 +29,7 @@ class SocketService with ChangeNotifier {
     //   'autoConnect': true
     // });
     
-    _socket = socket_io.io('http://localhost:3000', 
+    _socket = socket_io.io('https://flutter-socket-server-santy.herokuapp.com', 
       socket_io.OptionBuilder()
         .setTransports(['websocket'])
         .enableAutoConnect()
